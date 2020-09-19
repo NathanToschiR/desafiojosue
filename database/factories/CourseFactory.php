@@ -17,6 +17,7 @@ $factory->define(Course::class, function (Faker $faker) {
         'slug' => $faker->slug,
         'category_id' => $categories_id[$random_key],
         'image' => 'user.jpg',
+        'video' => $faker->url,
         'description' => $faker->text($maxNbChars = 100)
     ];
 });

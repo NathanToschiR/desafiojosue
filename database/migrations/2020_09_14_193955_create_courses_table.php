@@ -19,6 +19,7 @@ class CreateCoursesTable extends Migration
             $table->string('slug');
             $table->unsignedBigInteger('category_id');
             $table->string('image')->nullable();
+            $table->string('video');
             $table->string('description');
             $table->timestamps();
         });
